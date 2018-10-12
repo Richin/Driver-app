@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="thaisingtong.driver.app" version="1.6.1" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Thaisingtong Driver App</name>
+    <description>
+        Thaisingtong Driver App
+    </description>
+    <author email="richin@apstrix.com" href="http://cordova.io">
+        richin@apstrix.com
+    </author>
+    <icon src="icon.png" />
+    <content src="index.html" />
+    <gap:plugin name="cordova-plugin-whitelist" source="npm" />
+    <gap:plugin name="phonegap-plugin-push" source="npm" spec="1.10.5">
+        <param name="SENDER_ID" value="147662694333" />
+    </gap:plugin>
+    <gap:plugin name="cordova-plugin-device" source="npm" />
+    <gap:plugin name="cordova-plugin-inappbrowser" source="npm" />
+    <gap:plugin name="cordova-plugin-splashscreen" source="npm" />
+    <gap:plugin name="cordova-plugin-geolocation" source="npm" />
+    <gap:plugin name="cordova-plugin-network-information" source="npm" />
+    <gap:plugin name="cordova-plugin-request-location-accuracy" source="npm" spec="2.2.0" />
+    <gap:plugin name="cordova-plugin-x-toast" source="npm" spec="2.6.0" />
+    <gap:plugin name="cordova-plugin-media" source="npm" spec="3.0.0" />
+    <gap:plugin name="cordova-plugin-googlemaps-plus" source="npm">
+        <param name="API_KEY_FOR_ANDROID" value="AIzaSyC5fDPfCt1wAy0lwhZIL4dFLZR48BZsKvE" />
+        <param name="API_KEY_FOR_IOS" value="AIzaSyCeaXjpmYX_iV9G6ygeSqWBjkWmwmLh5Xg" />
+        <param name="LOCATION_WHEN_IN_USE_DESCRIPTION" value="Karenderia wants to use your location" />
+        <param name="LOCATION_ALWAYS_USAGE_DESCRIPTION" value="Karenderia want to always use your location" />
+    </gap:plugin>
+    <gap:plugin name="cordova-plugin-buildinfo" source="npm" spec="1.1.0" />
+    <gap:plugin name="cordova-plugin-vibration" source="npm" spec="2.1.4" />
+    <gap:plugin name="cordova-plugin-camera" source="npm" spec="2.4.1" />
+    <gap:plugin name="cordova-plugin-file-transfer" source="npm" spec="1.6.2" />
+    <gap:splash src="splash.png" />
+    <access origin="*" />
+    <access launch-external="yes" origin="tel:*" />
+    <gap:config-file parent="/manifest" platform="android">
+        <supports-screens android:largeScreens="true" android:smallScreens="true" android:xlargeScreens="true" />
+        <application android:theme="@android:style/Theme.NoTitleBar">
+        </application>
+    </gap:config-file>
+    <gap:plugin name="cordova.plugins.diagnostic" source="npm" spec="3.7.1" />
+    <edit-config file="*-Info.plist" mode="merge" target="NSCameraUsageDescription">
+        <string>need camera access to take pictures</string>
+    </edit-config>
+    <edit-config file="*-Info.plist" mode="merge" target="NSPhotoLibraryUsageDescription">
+        <string>need to photo library access to get pictures from there</string>
+    </edit-config>
+    <edit-config file="*-Info.plist" mode="merge" target="NSLocationWhenInUseUsageDescription">
+        <string>need location access to find things nearby</string>
+    </edit-config>
+    <edit-config file="*-Info.plist" mode="merge" target="NSLocationAlwaysAndWhenInUseUsageDescription">
+        <string>need location access to find things nearby</string>
+    </edit-config>
+    <edit-config file="*-Info.plist" mode="merge" target="NSPhotoLibraryAddUsageDescription">
+        <string>need to photo library access to save pictures there</string>
+    </edit-config>
+    <preference name="orientation" value="portrait" />
+    <preference name="android-build-tool" value="gradle" />
+    <preference name="permissions" value="none" />
+    <preference name="AutoHideSplashScreen" value="false" />
+    <preference name="SplashScreenDelay" value="5000" />
+    <preference name="phonegap-version" value="cli-7.0.1" />
+</widget>

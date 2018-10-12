@@ -1,0 +1,20 @@
+{
+    "nl.x-services.plugins.insomnia": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-insomnia@4.1.0"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-mauron85-background-geolocation": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-mauron85-background-geolocation@2.2.5"
+        },
+        "is_top_level": true,
+        "variables": {
+            "ALWAYS_USAGE_DESCRIPTION": "This app requires background tracking enabled"
+        }
+    }
+}

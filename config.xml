@@ -4,9 +4,9 @@
     xmlns:android = "http://schemas.android.com/apk/res/android"
     id        = "thaisingtong.driver.app"
     version   = "1.6.1">
-    <name>Thaisingtong Driver App</name>
+    <name>Risingsun Driver App</name>
     <description>
-        Thaisingtong Driver App
+        Risingsun Driver App
     </description>
     <author email="richin@apstrix.com" href="http://cordova.io">
         richin@apstrix.com
@@ -35,9 +35,9 @@
 	<gap:plugin name="cordova-plugin-media" source="npm" spec="3.0.0" />
 
     <gap:plugin name="cordova-plugin-googlemaps-plus" source="npm" >
-       <param name="API_KEY_FOR_ANDROID" value="AIzaSyC5fDPfCt1wAy0lwhZIL4dFLZR48BZsKvE" />
+       <param name="API_KEY_FOR_ANDROID" value="AIzaSyC_G33Kj1Jwa5XQroFxKfvsBce2JR-e5es" />
        <param name="API_KEY_FOR_IOS" value="AIzaSyCeaXjpmYX_iV9G6ygeSqWBjkWmwmLh5Xg" />
-       <param name="LOCATION_WHEN_IN_USE_DESCRIPTION" value="Karenderia wants to use your location" />
+       <param name="LOCATION_WHEN_IN_USE_DESCRIPTION" value="App wants to use your location" />
        <param name="LOCATION_ALWAYS_USAGE_DESCRIPTION" value="Karenderia want to always use your location" />
     </gap:plugin>
 

@@ -17,6 +17,9 @@
 	<preference name="orientation" value="portrait" />
 	<preference name="android-build-tool" value="gradle" />
 	<preference name="permissions" value="none"/>
+    <!-- Android only -->
+   
+    <preference name="android-minSdkVersion" value="26" />
 
 	<gap:plugin name="cordova-plugin-whitelist" source="npm" />
 
